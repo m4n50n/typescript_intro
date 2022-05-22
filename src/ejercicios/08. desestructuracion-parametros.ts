@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-interface Producto {
+export interface Producto { // Exportamos esta interface para usarla en ejercicios posteriores
     desc: string;
     precio: number;
 }
@@ -17,7 +17,7 @@ const tablet: Producto = {
     precio: 500
 };
 
-const calcular = (productos: Producto[]): [number, number] => {
+export const calcular = (productos: Producto[]): [number, number] => {
     let total = 0;
 
     productos.forEach(({ precio }) => { // Poniendo precio entre llaves desestructuramos los parámetros
