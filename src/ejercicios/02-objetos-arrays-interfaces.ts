@@ -7,7 +7,7 @@
  */
 //let habilidades = []; // Array JS
 
-let habilidades: any = [1, "string", 2]; // Se desaconseja el uso de any
+let habilidades: any[] = [1, "string", 2]; // Se desaconseja el uso de any
 let habilidades_mod = ["nombre1", "nombre2"]; // Se detectará string[]
 //habilidades_mod.push(1); // Por lo que al hacer un push de un número dará error
 
@@ -22,7 +22,7 @@ array.push("ok"); // Se admite porque el dato es aceptado
 //array.push({ id: "a" }); // NO se admite porque el dato NO es aceptado
 
 /**
- * OBJETOS
+ * OBJETOS E INTERFACES
  */
 //let habilidades = {}; // Objeto JS
 

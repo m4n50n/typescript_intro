@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-import { Producto, calcular } from "./08. desestructuracion-parametros";
+import { Producto, calcular } from "./08. desestructuracion-argumentos";
 
 const carritoCompras: Producto[] = [
     {

@@ -4,8 +4,7 @@
 
 // https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators
 
-// Los decoradores (funciones) cambian las clases en el momento de ser definidas añadiendo funcionalidades especiales
-
+// Los decoradores (funciones) sirven para cambiar las clases en el momento de ser definidas añadiendo funcionalidades especiales
 // https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators
 function reportableClassDecorator<T extends { new(...args: any[]): {} }>(constructor: T) {
     return class extends constructor {
@@ -26,3 +25,4 @@ console.log("MiSuperClase", MiSuperClase);
 
 const miClase = new MiSuperClase();
 console.log("miClase", miClase);
+console.log("miClase", miClase.miPropiedad);

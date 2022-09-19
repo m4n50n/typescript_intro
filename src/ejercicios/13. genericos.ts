@@ -7,6 +7,9 @@ const queTipoSoy = <T>(argumento: T) => { // Con funciones normales se escribir�
     return argumento;
 }
 
+// Definición de la función sin usar el formato de función flecha
+function queTipoSoyNormal<T>(argumento: T) {}
+
 let soyString = queTipoSoy("Hola"); // Declarando la función con <T>, soyString será de tipo string puesto que le pasamos un string
 let soyNumero = queTipoSoy(100); // Y soyNumero será de tipo number puesto que le pasamos un número
 let soyArray = queTipoSoy([1,2,3,4,5,6]); // soyArray será un array de números (number[])
